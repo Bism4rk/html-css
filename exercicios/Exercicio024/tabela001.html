@@ -9,23 +9,23 @@
         }
 
         table{
-            width: 400px;
+            width: 500px;
+            height: 500px;
             border-collapse: collapse;
             border: 5px solid blue;
-        }
-
-        tr.linha {
-            background-color: cadetblue;
         }
 
         td{
             border: solid 1px black;
             padding: 8px;
+            text-align: left; /* Alinhamento horizontal */
+            vertical-align: middle; /* Alinhamento vertical */
         }
 
-        td.dado{
-            background-color: yellow;
+        .numero{
+            text-align: right;
         }
+
     </style>
     <title>Tabelas</title>
 </head>
@@ -44,7 +44,7 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha"> <!--2a linha-->
+        <tr> <!--2a linha-->
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
@@ -56,8 +56,13 @@
         </tr>
         <tr> <!--4a linha-->
             <td>A4</td>
-            <td class="dado">B4</td>
+            <td>B4</td>
             <td>C4</td>
+        </tr>
+        <tr> <!--5a linha-->
+            <td class="numero">15</td>
+            <td class="numero">25</td>
+            <td class="numero">35</td>
         </tr>
     </table>
 </body>
